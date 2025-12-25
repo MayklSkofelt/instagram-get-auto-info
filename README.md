@@ -79,70 +79,25 @@ Automation logic for:
 ### `api_token.json`
 Stores the Apify API token.
 
-Example:
-```json
-  {
-  "APIFY_TOKEN": "your_apify_token_here"
-  }
+{
+    "API_TOKEN": "apify_api_your_token"
+}
 
+### `new_items.json`
+new added posts and çomments logs
+{
+  "downloads\\georginagio\\post\\2025-11-05 10-12 DQq8WKDjMx6\\1.jpg": 1763190803.118712,
+  "downloads\\georginagio\\post\\2025-11-05 10-12 DQq8WKDjMx6\\2.jpg": 1763190803.119157,
+  "downloads\\georginagio\\post\\2025-11-05 10-12 DQq8WKDjMx6\\3.jpg": 1763190803.119477,
+}
 
-⚠️ Do not share this file publicly
+### `posts.json`
 
-users.json
-
-List of Instagram usernames to monitor.
-
-Example:
-
+### `users.json`
+added users in here
 [
-  "instagram",
-  "natgeo",
-  "openai"
+  "georginagio",
+  "estellebke",
+  "katemade.tm"
 ]
-
-posts.json
-
-Contains all collected Instagram posts.
-
-Stored data includes:
-
-Post ID
-
-Caption
-
-Likes count
-
-Comments count
-
-Timestamp
-
-downloaded_posts.json
-
-Tracks posts that have already been processed or downloaded.
-Used to prevent duplicates.
-
-new_items.json
-
-Stores newly detected content, such as:
-
-New posts
-
-New comments
-
-This file is updated on each monitoring cycle.
-
-downloads/
-
-Optional directory for storing downloaded:
-
-Images
-
-Videos
-
-Other media content
-
-Usage
-
-Run the monitoring script:
-
-python instagram_monitor.py
+  
